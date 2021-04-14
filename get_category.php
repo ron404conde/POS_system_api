@@ -1,7 +1,7 @@
 <?php
     
 require_once "db_connect.php";
-$sql = "select * from tblproductcategory";
+$sql = "select * from tblproductcategory order by category_name";
 if(!$conn->query($sql))
 {
     echo "Error in connecting to database";
